@@ -9,4 +9,6 @@ export function errorLogger(text: string, error: unknown) {
     `ERROR -: ${localTime} :-  ${text} : ${error}` + "\n",
   );
   console.log(text, error);
+
+  return;
 }
