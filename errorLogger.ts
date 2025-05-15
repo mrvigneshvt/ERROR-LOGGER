@@ -18,7 +18,7 @@ export function errorLogger(text: string, error: unknown) {
 
   fs.appendFileSync(
     logFilePath,
-    `ERROR in ${text} -: ${localTime} : ${String(error)}\n`
+    `ERROR in ${text} Ocuured at ${localTime} :\n ${String(error)}\n\n\n`,
   );
 
   console.log(text, error);
